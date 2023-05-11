@@ -1,0 +1,110 @@
+.display_accommodation {
+  margin-top: 3%;
+  padding: 0;
+  height: 2800px;
+}
+
+.section_logements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+  min-width: 75%;
+  margin: auto;
+}
+
+.background {
+  position: absolute;
+  height: 2720px;
+  width: 70%;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+}
+
+.cards_bloc {
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+
+.cards {
+  position: relative;
+  flex-direction: column;
+  height: 320px;
+  width: 320px;
+  max-height: 320px;
+  max-width: 320px;
+}
+
+.img_cards {
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.title_img {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  height: 15%;
+  white-space: normal;
+  color: #fff;
+  font-weight: bold;
+  background-color: aqua;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+  border-radius: 10px;
+  box-shadow: 0px 8px 6px -6px black;
+}
+
+.title {
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 1580px) {
+  .display_accommodation {
+    height: auto;
+  }
+
+  .background {
+    height: auto;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .display_accommodation {
+    height: 3700px;
+  }
+
+  .background {
+    height: 3500px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .background {
+    display: none;
+  }
+
+  .cards {
+    position: relative;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    max-height: 500px;
+    max-width: 500px;
+  }
+
+  .display_accommodation {
+    height: auto;
+  }
+}

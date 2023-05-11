@@ -1,0 +1,22 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-around;
+  color: red;
+  width: 150px;
+}
+
+.link_nav {
+  color: red;
+  text-decoration: none;
+  margin: 3%;
+}

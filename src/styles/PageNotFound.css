@@ -1,0 +1,68 @@
+.bloc_error {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 8%;
+  height: 500px;
+}
+
+.code_error {
+  color: #ff6060;
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.message_error_desktop {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.message_error_mobile {
+  display: none;
+}
+
+.bloc_return {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.link_home {
+  display: flex;
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 780px) {
+  .code_error {
+    font-weight: 700;
+    font-size: 96px;
+  }
+  .message_error {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .link_home {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .message_error_desktop {
+    display: none;
+  }
+  .message_error_mobile {
+    display: flex;
+    color: #ff6060;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
