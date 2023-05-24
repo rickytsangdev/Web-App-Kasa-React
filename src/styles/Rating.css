@@ -1,0 +1,15 @@
+.bloc_stars {
+  width: 196px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.red_star {
+  width: 25px;
+  height: 25px;
+}
+
+.grey_star {
+  width: 25px;
+  height: 25px;
+}

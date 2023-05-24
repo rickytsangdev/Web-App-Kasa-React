@@ -1,7 +1,11 @@
+// import modules
 import '../styles/Header.css'
-import logo from '../assets/kasa-logo.jpg'
 import { Link } from 'react-router-dom'
 
+// import images
+import logo from '../assets/kasa-logo.svg'
+
+// Component
 function Header() {
   return (
     <div className="header">
@@ -10,7 +14,7 @@ function Header() {
         <Link to="/" className="link_nav">
           Accueil
         </Link>
-        <Link to="/AboutKasa" className="link_nav">
+        <Link to="/about-kasa" className="link_nav">
           A propos
         </Link>
       </nav>

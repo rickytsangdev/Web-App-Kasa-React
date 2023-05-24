@@ -1,0 +1,78 @@
+.container_slider {
+  width: 87%;
+  height: 415px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.container_collapsible {
+  width: 87%;
+  display: flex;
+  margin: auto;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+.equipments {
+  display: flex;
+}
+
+.container_information {
+  width: 87%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}
+.accommodation_title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  width: 100%;
+  color: #ff6060;
+  margin-bottom: 0;
+}
+
+.accommodation_city {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+  color: #ff6060;
+  margin: 0;
+}
+.bloc_host {
+  display: flex;
+  justify-content: space-around;
+  width: 210px;
+}
+.host_img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.accommodation_host {
+  width: 110px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: right;
+}
+
+.container_rating {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.bloc_collapse {
+  width: 582px;
+}
+
+.equipments_list {
+  list-style-type: none;
+}

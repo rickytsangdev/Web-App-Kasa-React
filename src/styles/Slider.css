@@ -1,0 +1,30 @@
+.slider_bloc {
+  height: 100%;
+  position: relative;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+}
+.img-number {
+  position: absolute;
+  color: #fff;
+  top: 88%;
+  right: 50%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.slider-image {
+  transition: opacity 1s ease-in-out;
+}

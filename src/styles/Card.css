@@ -1,7 +1,5 @@
-.section_cards {
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  max-width: 95%;
+.cards {
+  width: 87%;
   margin: auto;
+  margin-top: 3%;
 }

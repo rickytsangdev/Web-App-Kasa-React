@@ -1,11 +1,12 @@
 .footer {
   background-color: #000;
   width: 100%;
-  height: 100px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 3%;
 }
 
 .logo_white {
@@ -14,5 +15,8 @@
 }
 
 .footer_allRights {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
   color: #fff;
 }

@@ -1,6 +1,10 @@
-import logo from '../assets/logo-kasa-white.png'
+// import modules
 import '../styles/Footer.css'
 
+// import images
+import logo from '../assets/kasa-footer.svg'
+
+// Component
 function Footer() {
   return (
     <div className="footer">

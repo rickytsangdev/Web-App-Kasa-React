@@ -1,0 +1,22 @@
+.tags_bloc {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  gap: 15px;
+}
+
+.tag {
+  background-color: #ff6060;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+  padding: 0.5% 3% 0.5% 3%;
+}

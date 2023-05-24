@@ -1,6 +1,8 @@
+// import modules
 import '../styles/PageNotFound.css'
 import { Link } from 'react-router-dom'
 
+// Component
 function PageNotFound() {
   return (
     <div>
