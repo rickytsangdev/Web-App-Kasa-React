@@ -10,10 +10,9 @@ import data from '../../data/logements.json'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Slider from '../../components/Slider'
-import Collapsible from '../../components/Collapsible'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
-import Accord from '../../components/Accord'
+import Collapse from '../../components/Collapse'
 
 // Component
 function Accommodation() {
@@ -47,7 +46,31 @@ function Accommodation() {
         <Rating stars={accommodationData.rating} />
       </section>
       <section className="container_collapsible">
-        <div className="bloc_collapse">
+        <div className="collapsible_item">
+          <Collapse
+            className="collapse_visible_btn_acco collapse_about"
+            label="Description"
+            content={accommodationData.description}
+          />
+        </div>
+        <div className="collapsible_item">
+          <Collapse
+            className="collapse_visible_btn_acco collapse_about"
+            label="Equipements"
+            content={accommodationData.equipments.map((equipment) => (
+              <li className="equipments_list">{equipment}</li>
+            ))}
+          />
+        </div>
+      </section>
+      <Footer />
+    </>
+  )
+}
+
+export default Accommodation
+
+/* <div className="bloc_collapse">
           <Collapsible
             label="Description"
             items={accommodationData.description}
@@ -60,11 +83,4 @@ function Accommodation() {
               <li className="equipments_list">{equipment}</li>
             ))}
           />
-        </div>
-      </section>
-      <Footer />
-    </>
-  )
-}
-
-export default Accommodation
+        </div> */

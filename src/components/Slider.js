@@ -32,10 +32,24 @@ function Slider({ pictures }) {
   return (
     <div className="slider_bloc">
       <div className="left-arrow" onClick={goToPrevious}>
-        <img src={arrowLeft} alt="flèche-directionnelle-précédent"></img>
+        {pictures.length > 1 && (
+          <div>
+            <img
+              className="fleche-img"
+              src={arrowLeft}
+              alt="flèche-directionnelle-précédent"
+            ></img>
+          </div>
+        )}
       </div>
       <div className="right-arrow" onClick={goToNext}>
-        <img src={arrowRight} alt="flèche-directionnelle-suivant"></img>
+        {pictures.length > 1 && (
+          <img
+            className="fleche-img"
+            src={arrowRight}
+            alt="flèche-directionnelle-suivant"
+          ></img>
+        )}
       </div>
       <div className="img-number">
         <p>

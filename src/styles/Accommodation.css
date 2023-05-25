@@ -2,7 +2,7 @@
   width: 87%;
   height: 415px;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .container_collapsible {
@@ -76,3 +76,29 @@
 .equipments_list {
   list-style-type: none;
 }
+
+.collapse_visible_btn_acco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 582px;
+  background: #ff6060;
+  border-radius: 10px;
+  height: 52px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.collapsible_item {
+  width: 582px;
+}
+
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+  .container_slider {
+    width: 92%;
+    height: 255px;
+    margin-top: 3%;
+  }
+}
+/* -------- End Responsive  -------- */

@@ -1,3 +1,14 @@
+.banner_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
+  margin: auto;
+  margin-top: 3%;
+}
+.banner_bloc {
+  width: 100%;
+}
 .about_kasa {
   display: flex;
   flex-direction: column;
@@ -5,7 +16,8 @@
   width: 87%;
   margin: auto;
   margin-top: 2%;
-  gap: 22px;
+  gap: 25px;
+  margin-bottom: 6.45%;
 }
 
 .collapsible_bloc {
@@ -28,3 +40,47 @@
   line-height: 34px;
   pointer-events: none;
 }
+
+.collapse_about {
+  background: #ff6060;
+  border-radius: 10px;
+  height: 52px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+  .about_kasa {
+    width: 92%;
+    margin-bottom: 75%;
+  }
+  .collapsible_bloc {
+    width: auto;
+  }
+  .content_mobile {
+    font-size: 5px;
+  }
+  .collapse_about {
+    height: 30px;
+
+    .content p {
+      font-size: 5px;
+    }
+  }
+
+  .banner_about {
+    width: 92%;
+    margin: auto;
+    margin-top: 3%;
+    height: 223px;
+  }
+
+  .banner_bloc {
+    width: 100%;
+  }
+}
+
+/* -------- End Responsive  -------- */

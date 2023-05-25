@@ -31,9 +31,14 @@
 }
 
 /* -------- Start Responsive  -------- */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 720px) {
+  .header {
+    width: 92%;
+    align-items: center;
+  }
   .kasa-logo {
-    width: 150px;
+    width: 145px;
+    height: 47px;
     margin-top: 3%;
   }
 
@@ -44,8 +49,9 @@
     margin-top: 5%;
   }
 
-  .link_nav {
-    margin-left: 5%;
+  .header a {
+    font-size: 15px;
+    text-align: center;
   }
 }
 /* -------- End Responsive  -------- */

@@ -1,0 +1,49 @@
+.collapse_visible_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 582px;
+  background: #ff6060;
+  border-radius: 10px;
+  height: 52px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.visible_title {
+  margin-left: 2%;
+  font-family: 'monserrat' sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.arrow_btn {
+  margin-right: 2%;
+}
+
+.content {
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.content p {
+  padding: 15px 10px 25px 10px;
+  color: #ff6060;
+  font-weight: 400;
+  line-height: 25px;
+  pointer-events: none;
+}
+
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.3s;
+  width: auto;
+}
+
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+}
+
+/* -------- End Responsive  -------- */

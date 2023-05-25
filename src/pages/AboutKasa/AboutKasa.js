@@ -1,7 +1,7 @@
 // import Components
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
-import Collapsible from '../../components/Collapsible'
+import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
 
 // import modules
@@ -12,15 +12,16 @@ import AboutBanner from '../../assets/about-kasa-banner.jpg'
 //component
 function AboutKasa() {
   return (
-    <div>
+    <fragment>
       <Header />
-      <Banner image={AboutBanner} />
+      <Banner className="banner_about" image={AboutBanner} />
       <section className="about_kasa">
         <div className="collapsible_bloc">
-          <Collapsible
+          <Collapse
+            className="collapse_about"
             label="Fiabilité"
-            items={
-              <p>
+            content={
+              <p style={{ fontSize: '1.2em', padding: '10px', margin: '0' }}>
                 Les annonces postées sur Kasa garantissent une fiabilité totale.
                 Les photos sont conformes aux logements, et toutes les
                 informations sont régulièrement vérifiées par nos équipes.
@@ -29,10 +30,11 @@ function AboutKasa() {
           />
         </div>
         <div className="collapsible_bloc">
-          <Collapsible
+          <Collapse
+            className="collapse_about"
             label="Respect"
-            items={
-              <p>
+            content={
+              <p style={{ fontSize: '1.2em', padding: '10px', margin: '0' }}>
                 La bienveillance fait partie des valeurs fondatrices de Kasa.
                 Tout comportement discriminatoire ou de perturbation du
                 voisinage entraînera une exclusion de notre plateforme.
@@ -41,10 +43,11 @@ function AboutKasa() {
           />
         </div>
         <div className="collapsible_bloc">
-          <Collapsible
+          <Collapse
+            className="collapse_about"
             label="Service"
-            items={
-              <p>
+            content={
+              <p style={{ fontSize: '1.2em', padding: '10px', margin: '0' }}>
                 Nos équipes se tiennent à votre disposition pour vous fournir
                 une expérience parfaite. N'hésitez pas à nous contacter si vous
                 avez la moindre question.
@@ -53,10 +56,14 @@ function AboutKasa() {
           />
         </div>
         <div className="collapsible_bloc">
-          <Collapsible
+          <Collapse
+            className="collapse_about"
             label="Sécurité"
-            items={
-              <p>
+            content={
+              <p
+                className="content_mobile"
+                style={{ fontSize: '1.2em', padding: '10px', margin: '0' }}
+              >
                 La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
                 que pour les voyageurs, chaque logement correspond aux critères
                 de sécurité établis par nos services. En laissant une note aussi
@@ -70,7 +77,7 @@ function AboutKasa() {
         </div>
       </section>
       <Footer />
-    </div>
+    </fragment>
   )
 }
 

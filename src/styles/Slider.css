@@ -28,3 +28,20 @@
 .slider-image {
   transition: opacity 1s ease-in-out;
 }
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+  .left-arrow {
+    left: -1%;
+    transform: translate(50%, -50%);
+  }
+
+  .right-arrow {
+    right: -1%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fleche-img {
+    width: 15px;
+  }
+}
+/* -------- End Responsive  -------- */

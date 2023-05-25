@@ -12,7 +12,11 @@ function Home() {
   return (
     <div>
       <Header />
-      <Banner image={homeBanner} title="Chez vous partout et ailleurs" />
+      <Banner
+        className="banner_home"
+        image={homeBanner}
+        title="Chez vous, partout et ailleurs"
+      />
       <Card />
       <Footer />
     </div>
