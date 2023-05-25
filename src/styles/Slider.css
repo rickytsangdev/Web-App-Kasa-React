@@ -43,5 +43,10 @@
   .fleche-img {
     width: 15px;
   }
+
+  .img-number {
+    top: 80%;
+  }
 }
+
 /* -------- End Responsive  -------- */

@@ -21,12 +21,10 @@ function Slider({ pictures }) {
 
   const goToPrevious = () => {
     setCurrentSlide(currentSlide === 0 ? pictures.length - 1 : currentSlide - 1)
-    console.log(currentSlide)
   }
 
   const goToNext = () => {
     setCurrentSlide(currentSlide === pictures.length - 1 ? 0 : currentSlide + 1)
-    console.log(currentSlide)
   }
 
   return (

@@ -6,15 +6,20 @@ import Footer from '../../components/Footer'
 
 // import modules
 import '../../styles/AboutKasa.css'
+import { Fragment } from 'react'
 //import images
 import AboutBanner from '../../assets/about-kasa-banner.jpg'
 
 //component
 function AboutKasa() {
   return (
-    <fragment>
+    <Fragment>
       <Header />
-      <Banner className="banner_about" image={AboutBanner} />
+      <Banner
+        className="banner_about"
+        image={AboutBanner}
+        imageClassName="about_banner_img"
+      />
       <section className="about_kasa">
         <div className="collapsible_bloc">
           <Collapse
@@ -77,7 +82,7 @@ function AboutKasa() {
         </div>
       </section>
       <Footer />
-    </fragment>
+    </Fragment>
   )
 }
 

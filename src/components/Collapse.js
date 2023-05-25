@@ -14,11 +14,11 @@ function Collapse(props) {
   }
 
   const parentRef = useRef()
-  if (parentRef.current) console.log(parentRef.current.scrollHeight)
+
   return (
     <Fragment>
       <div className={props.className} onClick={toggle}>
-        <p className="visible_title">{props.label}</p>
+        <div className="visible_title">{props.label}</div>
         <img className="arrow_btn" src={arrow} alt="arrow-bouton-collapse" />
       </div>
       <div
@@ -35,7 +35,7 @@ function Collapse(props) {
         }
       >
         <div className="content">
-          <p>{props.content}</p>
+          <div className="content_descript ">{props.content}</div>
         </div>
       </div>
     </Fragment>

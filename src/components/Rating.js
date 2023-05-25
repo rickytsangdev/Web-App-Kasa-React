@@ -13,11 +13,21 @@ function Rating({ stars }) {
     <div className="bloc_stars">
       {range.map((rangeStar) =>
         stars >= rangeStar ? (
-          <span key={range.toString()}>
-            <img className="red_star" src={redStar} alt="étoile-pleine"></img>
+          <span key={rangeStar.toString()}>
+            <img
+              className="red_star"
+              src={redStar}
+              alt="étoile-pleine"
+              key={rangeStar.toString()}
+            ></img>
           </span>
         ) : (
-          <img className="grey_star" src={greyStar} alt="étoile-vide"></img>
+          <img
+            className="grey_star"
+            src={greyStar}
+            alt="étoile-vide"
+            key={rangeStar.toString()}
+          ></img>
         )
       )}
     </div>

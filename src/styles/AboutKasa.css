@@ -55,7 +55,7 @@
 @media screen and (max-width: 720px) {
   .about_kasa {
     width: 92%;
-    margin-bottom: 75%;
+    margin-bottom: 62%;
   }
   .collapsible_bloc {
     width: auto;
@@ -80,6 +80,15 @@
 
   .banner_bloc {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+  .collapsible_bloc {
+    width: 680px;
+  }
+  .about_kasa {
+    margin-bottom: 29%;
   }
 }
 

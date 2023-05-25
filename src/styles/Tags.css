@@ -20,3 +20,11 @@
   line-height: 25px;
   padding: 0.5% 3% 0.5% 3%;
 }
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+  .tag {
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+/* -------- End Responsive  -------- */

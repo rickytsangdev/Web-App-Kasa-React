@@ -13,3 +13,19 @@
   width: 25px;
   height: 25px;
 }
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+  .bloc_stars {
+    width: 120px;
+  }
+  .red_star {
+    width: 15px;
+    height: 15px;
+  }
+
+  .grey_star {
+    width: 15px;
+    height: 15px;
+  }
+}
+/* -------- End Responsive  -------- */

@@ -12,10 +12,11 @@ function FlatList() {
       <ul className="display_accommodation">
         {accommodationList.map((accommodation) => (
           <Link
+            key={accommodation.id}
             to={`accommodation/${accommodation.id}`}
             className="container_li"
           >
-            <li key={accommodation.id} className="liste_img_logements">
+            <li className="liste_img_logements">
               <img
                 className="image_cover"
                 src={accommodation.cover}
