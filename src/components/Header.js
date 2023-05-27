@@ -26,7 +26,3 @@ function Header() {
 }
 
 export default Header
-
-/* <Link to="/" className="link_nav">
-          Accueil
-        </Link> */
