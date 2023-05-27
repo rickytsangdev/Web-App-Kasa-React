@@ -1,6 +1,7 @@
 // import modules
 import '../styles/Header.css'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 // import images
 import logo from '../assets/kasa-logo.svg'
@@ -9,17 +10,23 @@ import logo from '../assets/kasa-logo.svg'
 function Header() {
   return (
     <div className="header">
-      <img src={logo} alt="kasa-agency " className="kasa-logo" />
+      <Link to="/">
+        <img src={logo} alt="kasa-agency " className="kasa-logo" />
+      </Link>
       <nav className="header_nav">
-        <Link to="/" className="link_nav">
+        <NavLink to="/" activeclassname="current">
           Accueil
-        </Link>
-        <Link to="/about-kasa" className="link_nav">
+        </NavLink>
+        <NavLink to="/about-kasa" exact="true" activeclassname="current">
           A propos
-        </Link>
+        </NavLink>
       </nav>
     </div>
   )
 }
 
 export default Header
+
+/* <Link to="/" className="link_nav">
+          Accueil
+        </Link> */

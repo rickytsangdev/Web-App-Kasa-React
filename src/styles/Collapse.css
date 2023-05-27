@@ -17,8 +17,14 @@
   font-size: 18px;
 }
 
-.arrow_btn {
+.arrow_btn_down {
   margin-right: 2%;
+}
+
+.arrow_btn_up {
+  margin-right: 2%;
+  transform: rotate(180deg);
+  transition: transform 0.5s;
 }
 
 .content {

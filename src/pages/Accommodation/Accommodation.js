@@ -1,14 +1,13 @@
 // import modules
 import { useParams } from 'react-router-dom'
 import '../../styles/Accommodation.css'
+import { Navigate } from 'react-router-dom'
 
 // import data
 import data from '../../data/logements.json'
 
 // import Components
 
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import Slider from '../../components/Slider'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
@@ -19,9 +18,12 @@ function Accommodation() {
   const { id } = useParams()
   const accommodationData = data.find((item) => item.id === id)
 
+  // test de l'accommodationData >>>>>>> condition à faire vérification
+  if (!accommodationData) {
+    return <Navigate to="/redirect" />
+  }
   return (
     <>
-      <Header />
       <section className="container_slider">
         <Slider pictures={accommodationData.pictures} />
       </section>
@@ -68,7 +70,6 @@ function Accommodation() {
           />
         </div>
       </section>
-      <Footer />
     </>
   )
 }

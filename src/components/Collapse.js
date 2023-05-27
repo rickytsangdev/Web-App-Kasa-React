@@ -19,7 +19,11 @@ function Collapse(props) {
     <Fragment>
       <div className={props.className} onClick={toggle}>
         <div className="visible_title">{props.label}</div>
-        <img className="arrow_btn" src={arrow} alt="arrow-bouton-collapse" />
+        <img
+          className={!isOpen ? 'arrow_btn_down' : 'arrow_btn_up'}
+          src={arrow}
+          alt="arrow-bouton-collapse"
+        />
       </div>
       <div
         className="content-parent"

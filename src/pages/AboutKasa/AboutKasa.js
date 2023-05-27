@@ -1,8 +1,6 @@
 // import Components
-import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
-import Footer from '../../components/Footer'
 
 // import modules
 import '../../styles/AboutKasa.css'
@@ -14,7 +12,6 @@ import AboutBanner from '../../assets/about-kasa-banner.jpg'
 function AboutKasa() {
   return (
     <Fragment>
-      <Header />
       <Banner
         className="banner_about"
         image={AboutBanner}
@@ -81,7 +78,6 @@ function AboutKasa() {
           />
         </div>
       </section>
-      <Footer />
     </Fragment>
   )
 }
